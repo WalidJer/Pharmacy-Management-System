@@ -6,17 +6,11 @@ package models;
  */
 public class Person {
 
-    // Attributes (Encapsulated)
-    /** The unique identifier for a person. */
+    // Attributes 
+    
     private String id;
-
-    /** The name of the person. */
     private String name;
-
-    /** The age of the person. */
     private int age;
-
-    /** The phone number of the person. */
     private String phoneNum;
 
     /**
@@ -72,7 +66,7 @@ public class Person {
         return phoneNum;
     }
 
-    // Setters (Modify Values)
+    // Setters 
 
     /**
      * Updates the person's id.

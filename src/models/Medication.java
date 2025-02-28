@@ -8,19 +8,10 @@ import java.util.Random;
  */
 public class Medication {
 
-    /** The unique identifier for the medication. */
     private String medID;
-
-    /** The name of the medication. */
     private String medName;
-
-    /** The dosage of the medication. */
     private String dose;
-
-    /** The quantity of the medication in stock. */
     private int quantityStock;
-
-    /** The expiry date of the medication. */
     private LocalDate expiryDate;
 
     /**
@@ -38,7 +29,7 @@ public class Medication {
         this.medName = medName;
         this.dose = dose;
         this.quantityStock = quantityStock;
-        this.expiryDate = (expiryDate != null) ? expiryDate : generateRandomExpiryDate(); // Uses provided expiry date or generates one
+        this.expiryDate = (expiryDate != null) ? expiryDate : generateRandomExpiryDate(); 
     }
 
     /**
@@ -49,18 +40,18 @@ public class Medication {
     private LocalDate generateRandomExpiryDate() {
         Random rand = new Random();
 
-        int minYears = -3; // Allows expiry up to 3 years in the past
-        int maxYears = 4;  // Allows expiry up to 5 years in the future
+        int minYears = -3; 
+        int maxYears = 4;  
 
         // Generate random year within range
-        int randomYearOffset = rand.nextInt(maxYears - minYears + 1) + minYears;//rand.nextInt(9)//{0to9}+minyear
-        int randomYear = LocalDate.now().getYear() + randomYearOffset;//either previous years or next years
+        int randomYearOffset = rand.nextInt(maxYears - minYears + 1) + minYears;
+        int randomYear = LocalDate.now().getYear() + randomYearOffset;
 
         // Generate random month (1 to 12)
         int randomMonth = rand.nextInt(12) + 1;
 
         // Generate random day (1 to max days in month)
-        int maxDay = LocalDate.of(randomYear, randomMonth, 1).lengthOfMonth();//first day to last day of month
+        int maxDay = LocalDate.of(randomYear, randomMonth, 1).lengthOfMonth();
         int randomDay = rand.nextInt(maxDay) + 1;
 
         return LocalDate.of(randomYear, randomMonth, randomDay);

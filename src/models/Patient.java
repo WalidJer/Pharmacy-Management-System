@@ -8,10 +8,7 @@ import java.util.List;
  */
 public class Patient extends Person {
 
-    /** List of medications the patient is taking. */
     private List<Medication> medications;
-
-    /** List of prescriptions assigned to the patient. */
     private List<Prescription> prescriptions;
 
     /**

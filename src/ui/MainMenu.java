@@ -209,14 +209,14 @@ public class MainMenu {
             System.out.println("             ADDING A NEW DOCTOR             ");
             System.out.println("=============================================");
 
-            // Collect user input for doctor details
+            
             System.out.print("Enter Doctor ID: ");
             String id = scanner.nextLine();
             System.out.print("Enter Doctor Name: ");
             String name = scanner.nextLine();
             System.out.print("Enter Age: ");
             int age = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine(); 
             System.out.print("Enter Phone Number: ");
             String phone = scanner.nextLine();
             System.out.print("Enter Specialization: ");
@@ -271,7 +271,7 @@ public class MainMenu {
             System.out.println("         ADDING A NEW MEDICATION             ");
             System.out.println("=============================================");
 
-            // Collect user input for medication details
+            
             System.out.print("Enter Medication ID: ");
             String id = scanner.nextLine();
             System.out.print("Enter Medication Name: ");
@@ -339,7 +339,7 @@ public class MainMenu {
             System.out.println("          PROCESSING A NEW PRESCRIPTION       ");
             System.out.println("=============================================");
 
-            // Collect prescription details
+            
             System.out.print("Enter Prescription ID: ");
             String id = scanner.nextLine();
             System.out.print("Enter Doctor Name: ");
@@ -406,7 +406,7 @@ public class MainMenu {
         System.out.println("  VIEWING PRESCRIPTIONS FOR A SPECIFIC PATIENT ");
         System.out.println("=============================================");
 
-        // Prompt user for patient name
+        
         System.out.print("Enter Patient Name: ");
         String patientName = scanner.nextLine().trim();
 

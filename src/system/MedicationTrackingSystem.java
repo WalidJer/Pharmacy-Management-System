@@ -13,13 +13,8 @@ import java.util.Scanner;
  */
 public class MedicationTrackingSystem {
 
-    
     private List<Patient> patients;
-
-    
     private List<Doctor> doctors;
-
-    
     private List<Medication> medications;
 
     /**
@@ -406,7 +401,7 @@ public class MedicationTrackingSystem {
         System.out.println("           PHARMACY SYSTEM REPORT            ");
         System.out.println("=============================================\n");
     
-        // Print Patients
+        
         System.out.println(" Patients: " + patients.size());
         System.out.println("---------------------------------------------");
         if (patients.isEmpty()) {
@@ -444,7 +439,7 @@ public class MedicationTrackingSystem {
         }
         System.out.println("---------------------------------------------");
     
-        // Print Medications
+        
         System.out.println(" Medications: " + medications.size());
         System.out.println("---------------------------------------------");
         if (medications.isEmpty()) {

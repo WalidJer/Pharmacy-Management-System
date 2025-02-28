@@ -8,22 +8,11 @@ import java.time.LocalDate;
  */
 public class Prescription {
 
-    /** The unique identifier for the prescription. */
     private String prescID;
-
-    /** The doctor who issued the prescription. */
     private Doctor doctor;
-
-    /** The patient for whom the prescription is issued. */
     private Patient patient;
-
-    /** The medication prescribed to the patient. */
     private Medication medication;
-
-    /** The date the prescription was issued. */
     private LocalDate prescDate;
-
-    /** The expiration date of the prescription (defaults to 1 year from issue date). */
     private LocalDate prescExpiry;
 
     /**

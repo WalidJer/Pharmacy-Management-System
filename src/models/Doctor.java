@@ -8,10 +8,7 @@ import java.util.List;
  */
 public class Doctor extends Person {
 
-    /** The doctor's field of specialization. */
     private String specialization;
-
-    /** List of patients assigned to the doctor. */
     private List<Patient> patients;
 
     /**
