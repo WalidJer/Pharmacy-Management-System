@@ -46,6 +46,9 @@ Once launched, the system presents an interactive menu for performing various op
 - Follow system prompts to enter or modify data.
 - Navigate back to the main menu or exit the system when done.
 
+## Important Note
+"Preloaded sample data includes Patients P001, P002; Doctors D001, D002; Medications M001, M002; and Prescriptions PRESC001, PRESC002. Additional entries now start at ID 003."
+
 ## System Documentation
 For a detailed explanation of the Pharmacy Management System, check the full documentation:
-(docs/System-Documentation.pdf)
+(doc/System-Documentation.pdf)
